@@ -1,6 +1,14 @@
-/index.json
-/index.html
+/debug
 /jstree.sublime-project
 /jstree.sublime-workspace
+/bower_components
 /node_modules
-/favicon.ico
+/site
+/nuget
+/demo/filebrowser/data/root
+/npm.txt
+/libs
+/docs
+/dist/libs
+/.vscode
+/.idea

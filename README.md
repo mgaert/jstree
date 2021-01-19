@@ -1,76 +1,31 @@
 # jstree
 
-## VERSION 2.0.0-ALPHA - NOT PRODUCTION READY
+[jsTree](http://www.jstree.com/) is jquery plugin, that provides interactive trees. It is absolutely free, [open source](https://github.com/vakata/jstree) and distributed under the MIT license.
 
-Tree view for jQuery. 
+jsTree is easily extendable, themable and configurable, it supports HTML & JSON data sources, AJAX & async callback loading.
 
-A list of useful pages:
+jsTree functions properly in either box-model (content-box or border-box), can be loaded as an AMD module, and has a built in mobile theme for responsive design, that can easily be customized. It uses jQuery's event system, so binding callbacks on various events in the tree is familiar and easy.
 
- - http://www.jstree.com/
- - http://www.jstree.com/demo
- - http://www.jstree.com/documentation
+You also get:
+ * drag & drop support
+ * keyboard navigation
+ * inline edit, create and delete
+ * tri-state checkboxes
+ * fuzzy searching
+ * customizable node types
 
-## Getting Started
-Download the [production version][min] or the [development version][max].
+_For more information, examples and API docs head on over to [the wiki page](https://github.com/vakata/jstree/wiki) and [jstree.com](http://www.jstree.com)_.
+_Feel free to ask any questions on the [discussions board](https://github.com/vakata/jstree/discussions)._
+_The PHP demos are now in a [separate repository](https://github.com/vakata/jstree-php-demos)._
 
-[min]: https://raw.github.com/vakata/jstree/master/dist/jstree.min.js
-[max]: https://raw.github.com/vakata/jstree/master/dist/jstree.js
+## License & Contributing
 
-### In your web page:
+_Please do NOT edit files in the "dist" subdirectory as they are generated via grunt. You'll find source code in the "src" subdirectory!_
 
-```
-<script src="libs/jquery.js"></script>
-<script src="dist/jstree.min.js"></script>
-<script>
-jQuery(function($) {
-  $('#container').jstree();
-});
-</script>
-```
+If you want to you can always [sponsor me](https://github.com/sponsors/vakata) or [donate a small amount][paypal] to help the development of jstree.
 
-###Interacting with the tree:
+[paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=paypal@vakata.com&currency_code=USD&amount=&return=http://jstree.com/donation&item_name=Buy+me+a+coffee+for+jsTree
 
-```
-/* METHOD ONE */
-jQuery("#container")
-  .jstree("operation_name" [, argument_1, argument_2, ...]);
+Copyright (c) 2020 Ivan Bozhanov (http://vakata.com)
 
-/* METHOD TWO */
-jQuery.jstree.reference(needle)
-  .operation_name([ argument_1, argument_2, ...]);
-```
-
-###Events:
-jsTree uses events to notify of any changes. All events fire on the tree container in the _jstree_ namespace and are named after the function that triggered them.
-
-```
-jQuery("#container")
-  .bind("ready.jstree", function (event, data) {
-    alert("TREE IS LOADED");
-    /* note the second parameter, read the docs on each event for its value */
-  })
-  .jstree({ /* configuration here */ });
-```
-
-###Data:
-
-TODO: a step by step guide to: HTML (no data plugin), HTML with plugin + AJAX, JSON, JSON + AJAX, XML, XML + AJAX, explain progressive render / unload
-
-###States:
-
-TODO: explain about passing states along with the data and the special data-jstree- attributes.
-
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
-
-_Also, please don't edit files in the "dist" subdirectory as they are generated via grunt. You'll find source code in the "src" subdirectory!_
-
-## License
-Copyright (c) 2013 Ivan Bozhanov (http://vakata.com) 
-
-Licensed under the MIT license.
-
- - http://www.opensource.org/licenses/mit-license.php
-
-Older releases can be found on [google code][older]
-[older]: http://code.google.com/p/jstree/downloads/list
+Licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
